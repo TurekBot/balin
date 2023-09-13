@@ -41,9 +41,9 @@ class ScreenshotsTest : BaseTest() {
     @Test
     fun `Navigate to Searx's index page`() {
         Browser.drive({ webDriver }, autoQuit = false) {
-            get("https://www.searx.me")
+            get("https://searx.thegpm.org/")
 
-            Assert.assertEquals(title, "searx.me")
+            Assert.assertEquals(title, "searx")
         }
     }
 }
